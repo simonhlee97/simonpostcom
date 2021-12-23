@@ -2,10 +2,10 @@
 title: 'Best Donuts in Incheon'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/assets/blog/dynamic-routing/cover.jpg'
-date: '2021-03-16T05:35:07.322Z'
+date: '2021-05-16T05:35:07.322Z'
 author:
   name: Simon
-  picture: '/assets/blog/authors/jj.jpeg'
+  picture: '/assets/blog/authors/simonface.jpg'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 ---

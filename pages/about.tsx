@@ -32,18 +32,26 @@ export default function About() {
 						</p>
 						<p className="mb-8 text-xl">Connect:</p>
 						<p className="mb-8 flex">
-							<FaGithubSquare
-								className="mr-4 hover:cursor-pointer hover:text-blue-600"
-								size={30}
-							/>
-							<FaLinkedin
-								className="mr-4 hover:cursor-pointer hover:text-blue-600"
-								size={30}
-							/>
-							<FaTwitterSquare
-								className="hover:cursor-pointer hover:text-blue-600"
-								size={30}
-							/>
+							<a href="https://github.com/simonhlee97">
+								<FaGithubSquare
+									className="mr-4 hover:cursor-pointer hover:text-blue-600"
+									size={34}
+								/>
+							</a>
+
+							<a href="https://linkedin.com/in/simon-h-lee">
+								<FaLinkedin
+									className="mr-4 hover:cursor-pointer hover:text-blue-600"
+									size={34}
+								/>
+							</a>
+
+							<a href="https://twitter.com/simonhlee97">
+								<FaTwitterSquare
+									className="hover:cursor-pointer hover:text-blue-600"
+									size={34}
+								/>
+							</a>
 						</p>
 					</div>
 				</Container>
