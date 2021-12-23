@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.simonface {
+	border-radius: 50%;
+	width: 80px;
+	height: auto;
+}
