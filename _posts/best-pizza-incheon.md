@@ -2,7 +2,20 @@
 title: 'Best Pizza in Incheon'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/assets/blog/preview/cover.jpg'
-date: '2020-03-16T05:35:07.322Z'
+thumbnails2: 
+  - 
+    height: 1
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599"
+    width: 2
+  - 
+    height: 2
+    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799"
+    width: 3
+  - 
+    height: 3
+    src: "https://source.unsplash.com/qDkso9nvCg0/600x799"
+    width: 4
+date: '2020-02-16T05:35:07.322Z'
 author:
   name: Simon
   picture: '/assets/blog/authors/simonface.jpg'

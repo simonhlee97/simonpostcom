@@ -2,6 +2,31 @@
 title: 'Dynamic Routing and Static Generation'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/assets/blog/dynamic-routing/cover.jpg'
+thumbnails2: 
+  - 
+    height: 3
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599"
+    width: 4
+  - 
+    height: 1
+    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799"
+    width: 1
+  - 
+    height: 4
+    src: "https://source.unsplash.com/qDkso9nvCg0/600x799"
+    width: 3
+  - 
+    height: 3
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599"
+    width: 4
+  - 
+    height: 1
+    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799"
+    width: 1
+  - 
+    height: 4
+    src: "https://source.unsplash.com/qDkso9nvCg0/600x799"
+    width: 3
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: Simon

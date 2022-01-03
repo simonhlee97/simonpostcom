@@ -16,14 +16,14 @@ export default function About() {
 						<p className="mb-8 text-3xl text-center">Hi, I'm Simon.</p>
 						<p className="mb-8">
 							I'm a Korean-born 'Hoosier' (a person from Indiana), so born in rice
-							fields, grew up in corn fields. I also lived in Chicago for about 10
-							years. Go Cubs.
+							fields 🌾, grew up in corn fields 🌽. I also lived in Chicago for about
+							10 years. Go Cubs ⚾️.
 						</p>
 
 						<p className="mb-8">
 							I'm a web developer, books/podcast nerd, 4.0 tennis player, terrible
 							golfer, pizza/taco connoisseur, and (not ashamed to admit) a die-hard
-							Indiana Pacers fan.
+							Indiana Pacers fan 🏀.
 						</p>
 						<p className="mb-8">
 							My blog is mostly about tech and web development topics like JavaScript,
