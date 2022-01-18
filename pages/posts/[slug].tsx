@@ -46,7 +46,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
 								author={post.author}
 							/>
 							<PostBody content={post.content} />
-							<PostFooter thumbnails2={post.thumbnails2} />
+							<PostFooter thumbnails2={post.thumbnails2} camera={ post.camera} />
 						</article>
 					</>
 				)}
@@ -69,10 +69,10 @@ export async function getStaticProps({ params }: Params) {
 		'date',
 		'slug',
 		'author',
+		'camera',
 		'content',
 		'ogImage',
 		'coverImage',
-		'thumbnails',
 		'thumbnails2',
 	])
 	const content = await markdownToHtml(post.content || '')

@@ -1,26 +1,27 @@
 ---
-title: 'Best Donuts in Incheon'
+title: 'Lorem Ipsum Post3'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-coverImage: '/assets/blog/dynamic-routing/cover.jpg'
+coverImage: '/assets/blog/preview/cover.jpg'
+camera: 'Sony A6600'
 thumbnails2: 
   - 
-    height: 3
-    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599"
-    width: 4
-  - 
     height: 1
-    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799"
-    width: 1
+    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599"
+    width: 2
   - 
-    height: 4
-    src: "https://source.unsplash.com/qDkso9nvCg0/600x799"
+    height: 2
+    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799"
     width: 3
-date: '2021-05-16T05:35:07.322Z'
+  - 
+    height: 3
+    src: "https://source.unsplash.com/qDkso9nvCg0/600x799"
+    width: 4
+date: '2020-02-16T05:35:07.322Z'
 author:
   name: Simon
   picture: '/assets/blog/authors/simonface.jpg'
 ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
+  url: '/assets/blog/preview/cover.jpg'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

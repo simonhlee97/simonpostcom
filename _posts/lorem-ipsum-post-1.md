@@ -1,7 +1,8 @@
 ---
-title: 'Dynamic Routing and Static Generation'
+title: 'Lorem Ipsum Post1'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/assets/blog/dynamic-routing/cover.jpg'
+camera: 'Sony A6600'
 thumbnails2: 
   - 
     height: 3
@@ -15,19 +16,7 @@ thumbnails2:
     height: 4
     src: "https://source.unsplash.com/qDkso9nvCg0/600x799"
     width: 3
-  - 
-    height: 3
-    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599"
-    width: 4
-  - 
-    height: 1
-    src: "https://source.unsplash.com/Dm-qxdynoEc/800x799"
-    width: 1
-  - 
-    height: 4
-    src: "https://source.unsplash.com/qDkso9nvCg0/600x799"
-    width: 3
-date: '2020-03-16T05:35:07.322Z'
+date: '2021-05-16T05:35:07.322Z'
 author:
   name: Simon
   picture: '/assets/blog/authors/simonface.jpg'
@@ -42,3 +31,13 @@ Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidu
 ## Lorem Ipsum
 
 Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+
+<div>
+<img src="https://picsum.photos/536/354" alt="tree" />
+</div>
+
+## Lorem Ipsum
+
+Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+
+

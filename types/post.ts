@@ -4,8 +4,9 @@ type PostType = {
 	slug: string
 	title: string
 	date: string
+	camera?: string
 	coverImage: string
-	thumbnails2: {
+	thumbnails2?: {
 		src: string
 		width: number
 		height: number
