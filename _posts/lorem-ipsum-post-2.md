@@ -1,13 +1,13 @@
 ---
 title: 'Lorem Ipsum Post2'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
-coverImage: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
-camera: 'Sony A6600'
+coverImage: 'https://picsum.photos/500/200?grayscale'
+camera: 'Fuji XT-3'
 thumbnails2: 
   - 
-    height: 1
-    src: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-    width: 2
+    height: 2
+    src: "https://picsum.photos/500/200/?blur"
+    width: 1
 date: '2022-01-06T05:35:07.322Z'
 author:
   name: Simon
@@ -16,37 +16,13 @@ ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 ---
 
-The following is an interview with (pseudonym) "Dave (USA)," who is currently a PhD candidate in South Korea. I asked him some questions about his experience living and working in Korea.
 
-Simon (S): **How did you first become interested in South Korea?**
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tristique erat nec sollicitudin laoreet. Nullam ut tortor commodo, feugiat nisl quis, hendrerit magna. Morbi accumsan nec orci ac eleifend. Sed cursus mauris nec ex aliquam pellentesque. Duis non sem volutpat, dapibus magna non, euismod justo. Nullam at auctor ligula. Fusce erat erat, venenatis a justo vestibulum, rutrum consequat enim.
 
-Dave (D): Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+Phasellus arcu tortor, vulputate ac faucibus id, elementum ac magna. Maecenas placerat nisl sed consequat sollicitudin. Vestibulum ut gravida felis, vel facilisis mauris. Quisque consequat ac eros vitae dictum. In congue elit mattis, rutrum dolor quis, fringilla elit. Donec imperdiet mauris non nisl pellentesque dictum. Etiam iaculis justo vitae accumsan porta. Donec lectus nisi, efficitur lacinia massa a, iaculis faucibus est. Sed interdum leo arcu, eu tincidunt ipsum viverra id. Sed in tortor odio. Aenean maximus urna ut mattis tincidunt. Mauris sit amet quam vel quam congue maximus euismod quis arcu. Phasellus eget blandit nulla.
 
+Donec rhoncus molestie leo non euismod. Aenean nec massa eu elit finibus vestibulum in tincidunt mi. Proin ullamcorper lectus quis semper suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer mattis neque eu sapien semper luctus. Integer dolor nisl, porttitor ac eros sed, euismod ultrices libero. Sed at fermentum nunc. Suspendisse non libero libero.
 
-S: **How much language and cultural knowledge did you have before coming here?**
+Sed fermentum a magna id placerat. Aliquam posuere a metus ut tempor. Nunc maximus vel velit eu ultrices. Sed varius, dui id commodo molestie, sem mi fringilla lacus, et tempus sem nisi ac quam. Mauris semper sodales nunc ut venenatis. Cras consequat ipsum ac nunc dictum maximus id feugiat erat. Etiam sit amet purus varius dolor finibus vulputate. Morbi ultrices, metus euismod pretium blandit, urna felis efficitur velit, sit amet ultricies sem risus non augue.
 
-D: Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
-
-S: **What were your expectations, and your initial impression? Any huge cultural shocks?**
-
-D: Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
-
-S: **Your first job in Korea was teaching at a high school. What was that like?**
-
-D: Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
-
-S: **Can you describe your experience being a doctoral candidate at a Korean university? From getting accepted, collaborating with professors, to struggles you faced, and achievements that you are proud of.**
-
-D: Tenenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod
-
-S: **After you finish your PhD, what would you like to do?**
-
-D: Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
-
-S: **One unique aspect of Korea that you like, and one challenge?**
-
-D: Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
-
-S: **Outside of school and work, what are your interests and hobbies?**
-
-D: Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+Donec sagittis mollis diam non pharetra. Suspendisse orci sem, euismod id iaculis ac, accumsan ut lorem. Curabitur egestas luctus massa vel malesuada. Curabitur vestibulum placerat mattis. Mauris rutrum sodales nisi, id efficitur neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas condimentum neque sed augue pretium volutpat. Suspendisse sodales faucibus eleifend. Proin eros turpis, volutpat sed finibus id, blandit sed neque. Praesent semper magna vulputate libero fringilla, a fermentum nibh maximus. 
