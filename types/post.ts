@@ -5,6 +5,7 @@ type PostType = {
 	title: string
 	date: string
 	camera?: string
+	tags?: string[]
 	coverImage: string
 	thumbnails2?: {
 		src: string

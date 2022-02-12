@@ -12,3 +12,15 @@
 	display: flex;
   align-items: center;
 }
+
+code {
+	background-color: black;
+	color: white;
+	padding: 1px 5px 2px 5px;
+}
+
+span.post-meta {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

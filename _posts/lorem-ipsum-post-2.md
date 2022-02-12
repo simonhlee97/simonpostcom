@@ -3,6 +3,9 @@ title: 'Lorem Ipsum Post2'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: 'https://picsum.photos/500/200?grayscale'
 camera: 'Fuji XT-3'
+tags: 
+  - nextJS
+  - web-development
 thumbnails2: 
   - 
     height: 2
@@ -10,7 +13,7 @@ thumbnails2:
     width: 1
 date: '2022-01-06T05:35:07.322Z'
 author:
-  name: Simon
+  name: 'Simon'
   picture: '/assets/blog/authors/simonface.jpg'
 ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'

@@ -21,6 +21,9 @@ const HeroPost = ({
   author,
   slug,
 }: Props) => {
+
+
+
   return (
     <section>
       <div className="mb-8 md:mb-16">
@@ -40,6 +43,7 @@ const HeroPost = ({
         <div>
           <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
           <Avatar name={author.name} picture={author.picture} />
+          
         </div>
       </div>
     </section>

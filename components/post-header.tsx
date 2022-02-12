@@ -4,6 +4,7 @@ import CoverImage from './cover-image'
 import PostTitle from './post-title'
 import Author from '../types/author'
 
+
 type Props = {
   title: string
   coverImage: string

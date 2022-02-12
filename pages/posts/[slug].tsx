@@ -1,17 +1,26 @@
+// single post page
+
+// nextjs components
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import Container from '../../components/container'
-import PostBody from '../../components/post-body'
-import Header from '../../components/header'
-import PostHeader from '../../components/post-header'
-import Layout from '../../components/layout'
-import { getPostBySlug, getAllPosts } from '../../lib/api'
-import PostTitle from '../../components/post-title'
 import Head from 'next/head'
+
+// types
+import PostType from '../../types/post'
+
+// components
+import Container from '../../components/container'
+import Header from '../../components/header'
+import Layout from '../../components/layout'
+import PostHeader from '../../components/post-header'
+import PostTitle from '../../components/post-title'
+import PostBody from '../../components/post-body'
+import PostFooter from '../../components/post-footer'
+
+// utils
+import { getPostBySlug, getAllPosts } from '../../lib/api'
 import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
-import PostType from '../../types/post'
-import PostFooter from '../../components/post-footer' //PostFooter2
 
 type Props = {
 	post: PostType
@@ -35,7 +44,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
 						<article className="mb-32">
 							<Head>
 								<title>
-									{post.title} | Next.js Blog Example with {CMS_NAME}
+									{post.title} | SimonPost.com {CMS_NAME}
 								</title>
 								<meta property="og:image" content={post.ogImage.url} />
 							</Head>
@@ -46,7 +55,10 @@ const Post = ({ post, morePosts, preview }: Props) => {
 								author={post.author}
 							/>
 							<PostBody content={post.content} />
-							<PostFooter thumbnails2={post.thumbnails2} camera={ post.camera} />
+							<PostFooter
+									thumbnails2={post.thumbnails2}
+									camera={post.camera}
+							/>
 						</article>
 					</>
 				)}
@@ -73,8 +85,10 @@ export async function getStaticProps({ params }: Params) {
 		'content',
 		'ogImage',
 		'coverImage',
+		'tags',
 		'thumbnails2',
 	])
+
 	const content = await markdownToHtml(post.content || '')
 
 	return {

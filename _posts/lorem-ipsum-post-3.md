@@ -3,6 +3,10 @@ title: 'Lorem Ipsum Post3'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/assets/blog/preview/cover.jpg'
 camera: 'Sony A6600'
+tags: 
+  - testingtag
+  - atesttag
+  - tag6
 thumbnails2: 
   - 
     height: 1
@@ -18,7 +22,7 @@ thumbnails2:
     width: 4
 date: '2020-02-16T05:35:07.322Z'
 author:
-  name: Simon
+  name: 'Simon'
   picture: '/assets/blog/authors/simonface.jpg'
 ogImage:
   url: '/assets/blog/preview/cover.jpg'
