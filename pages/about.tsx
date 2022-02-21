@@ -21,7 +21,7 @@ export default function About() {
 						</p>
 
 						<p className="mb-8">
-							I'm a web developer, books/podcast nerd, 4.0 tennis player, terrible
+							I'm a web developer, books/podcast nerd, 4.0 tennis player, 15-handicap
 							golfer, pizza/taco connoisseur, and (not ashamed to admit) a die-hard
 							Indiana Pacers fan 🏀.
 						</p>

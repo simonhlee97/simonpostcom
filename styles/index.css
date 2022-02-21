@@ -24,3 +24,8 @@ span.post-meta {
 	align-items: center;
 	justify-content: space-between;
 }
+
+.article:hover {
+	text-decoration: underline;
+	color: #1d1de4;
+}

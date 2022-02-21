@@ -1,7 +1,7 @@
 import Footer from './footer'
 import Meta from './meta'
 import { BiHome } from 'react-icons/bi'
-
+import Link from 'next/link'
 type Props = {
 	preview?: boolean
 	children: React.ReactNode
@@ -49,14 +49,16 @@ function Navbar() {
               md:justify-between
               md:pt-0">
 					<li>
-						<a className="md:p-4 py-2 block hover:text-blue-500" href="/about">
-							About
-						</a>
+						<Link href="/about">
+							<a className="md:p-4 py-2 block hover:text-blue-500">
+								About
+							</a>
+						</Link>
 					</li>
 					<li>
-						<a className="md:p-4 py-2 block hover:text-blue-500" href="/">
-							Blog
-						</a>
+						<Link href="/archive">
+							<a className="md:p-4 py-2 block hover:text-blue-500">Archive</a>
+						</Link>
 					</li>
 				</ul>
 			</div>
