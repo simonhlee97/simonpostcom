@@ -37,5 +37,18 @@ It's a production-ready framework built on top of the popular library, ReactJS. 
 
 ## Section 3 - Pages and File-based Routing
 
+```js
+const numbers = [25,50,75];
+
+const lessThan50 = numbers.filter( num => {
+  return num > 50;
+})
+
+const promise = new Promise();
+
+promise.then();
+```
+
+Remember we call filter by passing it a callback function that determines whether or not a given item should be filtered or included. In this case, the condition is character.mass > 100. So, our filter will look like this.
 
 

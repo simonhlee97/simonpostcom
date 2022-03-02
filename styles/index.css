@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+p, li {
+	font-weight: 200;
+	letter-spacing: .08rem;
+	line-height: 1.7rem;
+}
+
+
 .simonface {
 	border-radius: 50%;
 	width: 80px;
@@ -14,9 +21,10 @@
 }
 
 code {
-	background-color: black;
-	color: white;
-	padding: 1px 5px 2px 5px;
+	background-color: #c0baba;
+	font-size: 0.95rem;
+	color: #af1e05;
+	padding: 4px 5px 4px 5px;
 }
 
 span.post-meta {
