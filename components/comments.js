@@ -1,5 +1,3 @@
-
-
 import React, { useRef } from "react";
 
 import useScript from "../lib/use-script";
@@ -16,7 +14,7 @@ const Comments = () => {
   });
 
   return (
-    <div className="w-full">
+    <div className="w-full pb-8">
       {
         <div ref={comment}></div>
       }

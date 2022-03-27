@@ -1,0 +1,117 @@
+// single post page
+
+// nextjs components
+import { useRouter } from 'next/router'
+import ErrorPage from 'next/error'
+import Head from 'next/head'
+
+// types
+import PostType from '../../types/post'
+
+// components
+import Container from '../../components/container'
+import Header from '../../components/header'
+import Layout from '../../components/layout'
+import PostHeader from '../../components/post-header'
+import PostTitle from '../../components/post-title'
+import PostBody from '../../components/post-body'
+import PostFooter from '../../components/post-footer'
+
+// utils
+import { getPostBySlug, getAllPosts } from '../../lib/api'
+import { CMS_NAME } from '../../lib/constants'
+import markdownToHtml from '../../lib/markdownToHtml'
+
+type Props = {
+	post: PostType
+	morePosts: PostType[]
+	preview?: boolean
+}
+
+const Post = ({ post, morePosts, preview }: Props) => {
+	const router = useRouter()
+	if (!router.isFallback && !post?.slug) {
+		return <ErrorPage statusCode={404} />
+	}
+	return (
+		<Layout preview={preview}>
+			<Container>
+				<Header />
+				{router.isFallback ? (
+					<PostTitle>Loading…</PostTitle>
+				) : (
+					<>
+						<article className="mb-32">
+							<Head>
+								<title>
+									{post.title} | SimonPost.com {CMS_NAME}
+								</title>
+								<meta property="og:image" content={post.ogImage.url} />
+							</Head>
+							<PostHeader
+								title={post.title}
+								coverImage={post.coverImage}
+								date={post.date}
+								author={post.author}
+							/>
+							<PostBody content={post.content} />
+							<PostFooter
+									thumbnails2={post.thumbnails2}
+									camera={post.camera}
+							/>
+						</article>
+					</>
+				)}
+			</Container>
+		</Layout>
+	)
+}
+
+export default Post
+
+type Params = {
+	params: {
+		slug: string
+	}
+}
+
+export async function getStaticProps({ params }: Params) {
+	const post = getPostBySlug(params.slug, [
+		'title',
+		'date',
+		'slug',
+		'author',
+		'camera',
+		'content',
+		'ogImage',
+		'coverImage',
+		'tags',
+		'thumbnails2',
+	])
+
+	const content = await markdownToHtml(post.content || '')
+
+	return {
+		props: {
+			post: {
+				...post,
+				content,
+			},
+		},
+	}
+}
+
+export async function getStaticPaths() {
+	const posts = getAllPosts(['slug'])
+
+	return {
+		paths: posts.map((post) => {
+			return {
+				params: {
+					slug: post.slug,
+				},
+			}
+		}),
+		fallback: false,
+	}
+}

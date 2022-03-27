@@ -1,0 +1,27 @@
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.list li {
+  margin-bottom: 2rem;
+  border: 1px solid rgba(245, 245, 245, 0.233);
+  padding: 10px 10px 1px 10px;
+}
+
+.title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.excerpt {
+  font-size: 1.0rem;
+}
+
+.tags {
+  font-size: 0.75rem;
+}
+.tag {
+  margin-right: 6px; 
+}

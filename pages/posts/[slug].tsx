@@ -1,117 +1,70 @@
-// single post page
-
-// nextjs components
-import { useRouter } from 'next/router'
-import ErrorPage from 'next/error'
+import type { GetStaticProps, GetStaticPaths } from 'next'
+import Image from 'next/image'
 import Head from 'next/head'
+import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
+import { serialize } from 'next-mdx-remote/serialize'
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypeHighlight from 'rehype-highlight'
+import { getPostFromSlug, getSlugs, PostMeta } from '../../lib/newapi'
+import YouTube from '../../components/youtube';
+import 'highlight.js/styles/atom-one-dark.css'
+import Container from '../../components/containerne'
+import Comments from '../../components/comments'
+import SectionSeparator from '../../components/section-separator';
+import Thumbnail from '../../components/thumbnail';
 
-// types
-import PostType from '../../types/post'
-
-// components
-import Container from '../../components/container'
-import Header from '../../components/header'
-import Layout from '../../components/layout'
-import PostHeader from '../../components/post-header'
-import PostTitle from '../../components/post-title'
-import PostBody from '../../components/post-body'
-import PostFooter from '../../components/post-footer'
-
-// utils
-import { getPostBySlug, getAllPosts } from '../../lib/api'
-import { CMS_NAME } from '../../lib/constants'
-import markdownToHtml from '../../lib/markdownToHtml'
-
-type Props = {
-	post: PostType
-	morePosts: PostType[]
-	preview?: boolean
+interface MDXPost {
+	source: MDXRemoteSerializeResult<Record<string, unknown>>
+	meta: PostMeta
 }
 
-const Post = ({ post, morePosts, preview }: Props) => {
-	const router = useRouter()
-	if (!router.isFallback && !post?.slug) {
-		return <ErrorPage statusCode={404} />
-	}
+export default function PostPage({ post }: { post: MDXPost }) {
 	return (
-		<Layout preview={preview}>
+		<>
+			<Head>
+				<title>{post.meta.title}</title>
+			</Head>
 			<Container>
-				<Header />
-				{router.isFallback ? (
-					<PostTitle>Loading…</PostTitle>
-				) : (
-					<>
-						<article className="mb-32">
-							<Head>
-								<title>
-									{post.title} | SimonPost.com {CMS_NAME}
-								</title>
-								<meta property="og:image" content={post.ogImage.url} />
-							</Head>
-							<PostHeader
-								title={post.title}
-								coverImage={post.coverImage}
-								date={post.date}
-								author={post.author}
-							/>
-							<PostBody content={post.content} />
-							<PostFooter
-									thumbnails2={post.thumbnails2}
-									camera={post.camera}
-							/>
-						</article>
-					</>
-				)}
+				<div className="mycontainer">
+					<h1 className="text-center font-bold">
+						{post.meta.title}
+					</h1>
+					<p className="text-center">{post.meta.date}</p>
+					<SectionSeparator />
+					<MDXRemote {...post.source} components={{ YouTube, Image, Thumbnail }} />
+				</div>
+				<div className="post-footer max-w-2xl mx-auto w-full">
+					<hr className="hr" />
+					<p className="text-center mx-auto my-4">Feel free to drop a comment</p>
+					<Comments />
+				</div>
 			</Container>
-		</Layout>
+		</>
 	)
 }
 
-export default Post
-
-type Params = {
-	params: {
-		slug: string
-	}
-}
-
-export async function getStaticProps({ params }: Params) {
-	const post = getPostBySlug(params.slug, [
-		'title',
-		'date',
-		'slug',
-		'author',
-		'camera',
-		'content',
-		'ogImage',
-		'coverImage',
-		'tags',
-		'thumbnails2',
-	])
-
-	const content = await markdownToHtml(post.content || '')
-
-	return {
-		props: {
-			post: {
-				...post,
-				content,
-			},
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+	const { slug } = params as { slug: string }
+	const { content, meta } = getPostFromSlug(slug)
+	const mdxSource = await serialize(content, {
+		mdxOptions: {
+			rehypePlugins: [
+				rehypeSlug,
+				[rehypeAutolinkHeadings, { behavior: 'wrap' }],
+				rehypeHighlight,
+			],
 		},
-	}
+	})
+
+	return { props: { post: { source: mdxSource, meta } } }
 }
 
-export async function getStaticPaths() {
-	const posts = getAllPosts(['slug'])
+export const getStaticPaths: GetStaticPaths = async () => {
+	const paths = getSlugs().map((slug) => ({ params: { slug } }))
 
 	return {
-		paths: posts.map((post) => {
-			return {
-				params: {
-					slug: post.slug,
-				},
-			}
-		}),
+		paths,
 		fallback: false,
 	}
 }

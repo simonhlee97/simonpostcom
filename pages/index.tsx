@@ -1,51 +1,32 @@
-import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
-import Intro from '../components/intro'
-import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
-import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
-import Post from '../types/post'
+import { getAllPosts, PostMeta } from '../lib/newapi'
+import Container from '../components/containerne'
+import Articles from '../components/articles'
 
-type Props = {
-	allPosts: Post[]
-}
-
-const Index = ({ allPosts }: Props) => {
-	const heroPost = allPosts[0]
-	const morePosts = allPosts.slice(1)
+export default function Home({ posts }: { posts: PostMeta[] }) {
 	return (
 		<>
-			<Layout>
-				<Head>
-					<title>SimonPost.com {CMS_NAME}</title>
-				</Head>
-				<Container>
-					<Intro />
-					{heroPost && (
-						<HeroPost
-							title={heroPost.title}
-							coverImage={heroPost.coverImage}
-							date={heroPost.date}
-							author={heroPost.author}
-							slug={heroPost.slug}
-							excerpt={heroPost.excerpt}
-						/>
-					)}
-					{morePosts.length > 0 && <MoreStories posts={morePosts} />}
-				</Container>
-			</Layout>
+			<Container>
+				<div className="flex flex-col justify-center items-center mycontainer pb-12">
+					<h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-gray-100">
+						SimonPost.com
+					</h1>
+					<h2>A blog by Simon Lee</h2>
+					<p className="mb-16">
+						Frontend Dev who enjoys building UIs and fullstack applications with
+						Jamstack and serverless tools. Blogging about web development and
+						expat-life in Korea.
+					</p>
+					<Articles posts={posts} />
+				</div>
+			</Container>
 		</>
 	)
 }
 
-export default Index
+export async function getStaticProps() {
+	const posts = getAllPosts()
+		.slice(0, 9)
+		.map((post) => post.meta)
 
-export const getStaticProps = async () => {
-	const allPosts = getAllPosts(['title', 'date', 'slug', 'author', 'coverImage', 'excerpt'])
-
-	return {
-		props: { allPosts },
-	}
+	return { props: { posts } }
 }

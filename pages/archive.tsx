@@ -1,7 +1,6 @@
 import { getAllPosts } from '../lib/api'
 import Post from '../types/post'
-import Layout from '../components/layout'
-import Container from '../components/container'
+import Container from '../components/containerne'
 import PostTitle from '../components/post-title'
 
 import Link from 'next/link'
@@ -14,7 +13,6 @@ type Props = {
 
 const Archive = ({ allPosts }: Props) => { 
   return (
-		<Layout>
 			<Container>
 				<div className="mt-12">
 					<PostTitle>Archive</PostTitle>
@@ -25,7 +23,6 @@ const Archive = ({ allPosts }: Props) => {
 					))}
 				</div>
 			</Container>
-		</Layout>
   )
 }
 export default Archive

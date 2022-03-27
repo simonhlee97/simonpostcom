@@ -1,23 +1,21 @@
-import Container from '../components/container'
-import Layout from '../components/layout'
+import Container from '../components/containerne'
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
 
 export default function About() {
 	return (
 		<>
-			<Layout>
 				<Container>
-					<div className="py-2 m-auto max-w-prose">
+					<div className="mycontainer">
 						<img
 							src="/assets/blog/authors/simonface.jpg"
-							className="mt-20 mb-4 mx-auto simonface"
+							className="mt-8 mb-4 mx-auto simonface"
 							alt="simonface"
 						/>
-						<p className="mb-8 text-3xl text-center">Hi, I'm Simon.</p>
+						<h4 className="mb-8 text-3xl text-center">Hi, I'm Simon.</h4>
 						<p className="mb-8">
 							I'm a Korean-born 'Hoosier' (a person from Indiana), so born in rice
 							fields 🌾, grew up in corn fields 🌽. I also lived in Chicago for about
-							10 years. Go Cubs ⚾️.
+							10 years, so a Cubs fan as well ⚾️.
 						</p>
 
 						<p className="mb-8">
@@ -55,7 +53,6 @@ export default function About() {
 						</p>
 					</div>
 				</Container>
-			</Layout>
 		</>
 	)
 }
