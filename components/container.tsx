@@ -5,7 +5,12 @@ import NextLink from 'next/link'
 import cn from 'classnames'
 import MobileMenu from './mobileMenu'
 
-function NavItem({ href, text }) {
+type NavItem = {
+	href: string
+	text: string
+}
+
+function NavItem({ href, text }: NavItem) {
 	const router = useRouter()
 	const isActive = router.asPath === href
 
@@ -26,11 +31,6 @@ function NavItem({ href, text }) {
 
 export default function Container(props) {
 	const [mounted, setMounted] = useState(false)
-	// const { resolvedTheme, setTheme } = useTheme()
-
-	// After mounting, we have access to the theme
-	// useEffect(() => setMounted(true), [])
-
 	const { children, ...customMeta } = props
 	const router = useRouter()
 	const meta = {
