@@ -1,4 +1,4 @@
-import Container from '../components/containerne'
+import Container from '../components/container'
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
 
 export default function About() {

@@ -1,5 +1,5 @@
-import { getAllPosts, PostMeta } from '../lib/newapi'
-import Container from '../components/containerne'
+import { getAllPosts, PostMeta } from '../lib/api'
+import Container from '../components/container'
 import Articles from '../components/articles'
 
 export default function Home({ posts }: { posts: PostMeta[] }) {

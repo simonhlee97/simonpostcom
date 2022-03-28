@@ -6,13 +6,14 @@ import { serialize } from 'next-mdx-remote/serialize'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeHighlight from 'rehype-highlight'
-import { getPostFromSlug, getSlugs, PostMeta } from '../../lib/newapi'
+import { getPostFromSlug, getSlugs, PostMeta } from '../../lib/api'
 import YouTube from '../../components/youtube';
 import 'highlight.js/styles/atom-one-dark.css'
-import Container from '../../components/containerne'
+import Container from '../../components/container'
 import Comments from '../../components/comments'
 import SectionSeparator from '../../components/section-separator';
 import Thumbnail from '../../components/thumbnail';
+import Avatar from '../../components/avatar'
 
 interface MDXPost {
 	source: MDXRemoteSerializeResult<Record<string, unknown>>
@@ -27,9 +28,7 @@ export default function PostPage({ post }: { post: MDXPost }) {
 			</Head>
 			<Container>
 				<div className="mycontainer">
-					<h1 className="text-center font-bold">
-						{post.meta.title}
-					</h1>
+					<h1 className="text-center font-bold">{post.meta.title}</h1>
 					<p className="text-center">{post.meta.date}</p>
 					<SectionSeparator />
 					<MDXRemote {...post.source} components={{ YouTube, Image, Thumbnail }} />

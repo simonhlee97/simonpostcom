@@ -1,6 +1,6 @@
 import { getAllPosts } from '../lib/api'
 import Post from '../types/post'
-import Container from '../components/containerne'
+import Container from '../components/container'
 import PostTitle from '../components/post-title'
 
 import Link from 'next/link'
