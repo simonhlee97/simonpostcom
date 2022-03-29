@@ -12,9 +12,7 @@ export default function Home({ posts }: { posts: PostMeta[] }) {
 					</h1>
 					<h2>A blog by Simon Lee</h2>
 					<p className="mb-16">
-						Frontend Dev who enjoys building UIs and fullstack applications with
-						Jamstack and serverless tools. Blogging about web development and
-						expat-life in Korea.
+						Blogging about web development and expat-life in Korea.
 					</p>
 					<Articles posts={posts} />
 				</div>

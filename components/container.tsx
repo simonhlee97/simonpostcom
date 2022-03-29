@@ -1,13 +1,20 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useState, ReactNode, ReactElement } from 'react'
 import NextLink from 'next/link'
 import cn from 'classnames'
 import MobileMenu from './mobileMenu'
 
-type NavItem = {
-	href: string
-	text: string
+interface NavItem {
+	href: string;
+	text: string;
+}
+
+interface ContainerChildren { 
+	children: [];
+}
+interface ContainerProps { 
+
 }
 
 function NavItem({ href, text }: NavItem) {
@@ -29,14 +36,15 @@ function NavItem({ href, text }: NavItem) {
 	)
 }
 
-export default function Container(props) {
+export default function Container({ children }: {children: ReactNode}, props: ContainerProps): ReactElement | null {
 	const [mounted, setMounted] = useState(false)
-	const { children, ...customMeta } = props
+	const { ...customMeta } = props
 	const router = useRouter()
 	const meta = {
 		title: 'Simon Lee | Web Developer, blogger',
 		description: `JavaScript, React, JamStack, Vuejs coder`,
 		image: 'https://avatars.githubusercontent.com/u/22103041?s=400&u=668d531fbba9162341e3b1510491bcf9baf9eff4&v=4',
+		date: 'date',
 		type: 'website',
 		...customMeta,
 	}
@@ -70,9 +78,7 @@ export default function Container(props) {
 					</div>
 				</nav>
 			</div>
-			<main className="flex flex-col justify-center px-8">
-				{children}
-			</main>
+			<main className="flex flex-col justify-center px-8">{children}</main>
 		</div>
 	)
 }

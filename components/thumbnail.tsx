@@ -1,14 +1,14 @@
 import Image from 'next/image'
 
-export default function Thumbnail({ id }: { id: string }) {
+export default function Thumbnail({ src }: { src: string }) {
 	return (
-		<div className="my-6 aspect-w-16 aspect-h-9">
+		<div className="my-8 aspect-w-16 aspect-h-9">
 			<Image
-				src={`https://picsum.photos/id/${id}/800/450`}
+				src={src}
 				width={800}
 				height={450}
 				layout='responsive'
-				quality={75}
+				quality={80}
 				className="max-w-full h-auto rounded"
 			/>
 		</div>
