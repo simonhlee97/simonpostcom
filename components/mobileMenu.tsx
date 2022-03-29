@@ -58,6 +58,13 @@ export default function MobileMenu() {
 							<a className="flex w-auto pb-4">About</a>
 						</Link>
 					</li>
+					<li
+						className="border-b border-gray-700 text-gray-100 text-sm font-semibold"
+						style={{ transitionDelay: '350ms' }}>
+						<Link href="https://github.com/simonhlee97/simonpostcom">
+							<a className="flex w-auto pb-4">Help Simon Fix Mobile Nav</a>
+						</Link>
+					</li>
 				</ul>
 			)}
 		</>
