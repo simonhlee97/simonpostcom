@@ -13,7 +13,6 @@ import Container from '../../components/container'
 import Comments from '../../components/comments'
 import SectionSeparator from '../../components/section-separator';
 import Thumbnail from '../../components/thumbnail';
-import Avatar from '../../components/avatar'
 
 interface MDXPost {
 	source: MDXRemoteSerializeResult<Record<string, unknown>>
