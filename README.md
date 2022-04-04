@@ -1,3 +1,9 @@
+## SimonPost.com - a blog by Simon Lee
+
+SimonPost.com is a dev-blog I created with Nextjs, TailwindCSS, and TypeScript.
+
+***
+Everything below this line is the original README (from Next.js Markdown Blog template).
 # A statically generated blog example using Next.js, Markdown, and TypeScript
 
 This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.

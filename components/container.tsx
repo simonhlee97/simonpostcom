@@ -37,8 +37,11 @@ function NavItem({ href, text }: NavItem) {
 }
 
 export default function Container({ children }: {children: ReactNode}, props: ContainerProps): ReactElement | null {
-	const [mounted, setMounted] = useState(false)
-	const { ...customMeta } = props
+	// const [mounted, setMounted] = useState(false)
+	const [isMenuOpen, setIsMenuOpen] = useState(false)
+			
+	
+	const { ...customMeta} = props
 	const router = useRouter()
 	const meta = {
 		title: 'Simon Lee | Web Developer, blogger',
@@ -78,7 +81,7 @@ export default function Container({ children }: {children: ReactNode}, props: Co
 					</div>
 				</nav>
 			</div>
-			<main className="flex flex-col justify-center px-8">{children}</main>
+			<main className="container-content flex flex-col justify-center px-8">{children}</main>
 		</div>
 	)
 }
