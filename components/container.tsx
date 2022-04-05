@@ -72,15 +72,6 @@ export default function Container({ children }: {children: ReactNode}, props: Co
 				<meta name="twitter:image" content={meta.image} />
 				{meta.date && <meta property="article:published_time" content={meta.date} />}
 			</Head>
-			{/* <div className=" flex flex-col justify-center px-8">
-				<nav className="flex items-center justify-center w-full relative max-w-2xl border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 bg-opacity-60 text-gray-100">
-					<div>
-						<MobileMenu />
-						<NavItem href="/" text="Home" />
-						<NavItem href="/about" text="About" />
-					</div>
-				</nav>
-			</div >  */}
 			<TailNavbar />
 			<main className="min-h-full container-content flex flex-col justify-center px-8 pt-8">
 				{children}
