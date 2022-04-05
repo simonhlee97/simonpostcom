@@ -3,7 +3,8 @@ import { useRouter } from 'next/router'
 import { useState, ReactNode, ReactElement } from 'react'
 import NextLink from 'next/link'
 import cn from 'classnames'
-import MobileMenu from './mobileMenu'
+// import MobileMenu from './mobileMenu'
+import TailNavbar from './TailNavbar'
 
 interface NavItem {
 	href: string;
@@ -39,7 +40,6 @@ function NavItem({ href, text }: NavItem) {
 export default function Container({ children }: {children: ReactNode}, props: ContainerProps): ReactElement | null {
 	// const [mounted, setMounted] = useState(false)
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
-			
 	
 	const { ...customMeta} = props
 	const router = useRouter()
@@ -72,7 +72,7 @@ export default function Container({ children }: {children: ReactNode}, props: Co
 				<meta name="twitter:image" content={meta.image} />
 				{meta.date && <meta property="article:published_time" content={meta.date} />}
 			</Head>
-			<div className="flex flex-col justify-center px-8">
+			{/* <div className=" flex flex-col justify-center px-8">
 				<nav className="flex items-center justify-center w-full relative max-w-2xl border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 bg-opacity-60 text-gray-100">
 					<div>
 						<MobileMenu />
@@ -80,8 +80,11 @@ export default function Container({ children }: {children: ReactNode}, props: Co
 						<NavItem href="/about" text="About" />
 					</div>
 				</nav>
-			</div>
-			<main className="container-content flex flex-col justify-center px-8">{children}</main>
+			</div >  */}
+			<TailNavbar />
+			<main className="min-h-full container-content flex flex-col justify-center px-8 pt-8">
+				{children}
+			</main>
 		</div>
 	)
 }
