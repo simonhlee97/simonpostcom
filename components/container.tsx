@@ -1,15 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useState, ReactNode, ReactElement } from 'react'
-import NextLink from 'next/link'
-import cn from 'classnames'
-// import MobileMenu from './mobileMenu'
-import TailNavbar from './TailNavbar'
-
-interface NavItem {
-	href: string;
-	text: string;
-}
+import { ReactNode, ReactElement } from 'react'
+import { MyNavbar } from './index'
 
 interface ContainerChildren { 
 	children: [];
@@ -18,29 +10,7 @@ interface ContainerProps {
 
 }
 
-function NavItem({ href, text }: NavItem) {
-	const router = useRouter()
-	const isActive = router.asPath === href
-
-	return (
-		<NextLink href={href}>
-			<a
-				className={cn(
-					isActive
-						? 'font-semibold text-gray-200'
-						: 'font-normal text-gray-400',
-					'hidden md:inline-block p-1 sm:px-3 sm:py-2 rounded-lg hover:bg-gray-800 transition-all text-sm'
-				)}>
-				<span className="capsize">{text}</span>
-			</a>
-		</NextLink>
-	)
-}
-
 export default function Container({ children }: {children: ReactNode}, props: ContainerProps): ReactElement | null {
-	// const [mounted, setMounted] = useState(false)
-	const [isMenuOpen, setIsMenuOpen] = useState(false)
-	
 	const { ...customMeta} = props
 	const router = useRouter()
 	const meta = {
@@ -53,9 +23,14 @@ export default function Container({ children }: {children: ReactNode}, props: Co
 	}
 
 	return (
-		<div>
+		<>
 			<Head>
 				<title>{meta.title}</title>
+				<link
+					rel="icon"
+					type="image/svg+xml"
+					href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230f1f9b%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2279%22>📬</text></svg>"
+				/>
 				<meta name="robots" content="follow, index" />
 				<meta content={meta.description} name="description" />
 				<meta property="og:url" content={`https://simonpost.com${router.asPath}`} />
@@ -72,10 +47,10 @@ export default function Container({ children }: {children: ReactNode}, props: Co
 				<meta name="twitter:image" content={meta.image} />
 				{meta.date && <meta property="article:published_time" content={meta.date} />}
 			</Head>
-			<TailNavbar />
+			<MyNavbar />
 			<main className="min-h-full container-content flex flex-col justify-center px-8 pt-8">
 				{children}
 			</main>
-		</div>
+		</>
 	)
 }

@@ -1,6 +1,7 @@
-import styles from '../styles/youtube.module.css'
+import styles from './youtube.module.css'
 
-export default function YouTube({ id }: { id: string }) {
+export function YouTube({ id }: { id: string }) {
+
 	return (
 		<div className={styles.container}>
 			<iframe

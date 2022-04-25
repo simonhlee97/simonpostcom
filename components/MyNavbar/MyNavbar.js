@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import Link from 'next/link';
 
-const TailNavbar = () => {
+export const MyNavbar = () => {
 	const [open, setOpen] = useState(false);
 
 	const handleClick = () => {
@@ -15,8 +15,8 @@ const TailNavbar = () => {
 
 	return (
     <nav className='navbar'>
-			<Link href="/" className='nav-logo'>
-				<a>SimonPost</a>
+			<Link href="/">
+				<a className='nav-logo'>SimonPost</a>
 			</Link>
 			<div onClick={handleClick} className='nav-icon'>
 				{open ? <FiX /> : <FiMenu />}
@@ -36,5 +36,3 @@ const TailNavbar = () => {
 		</nav>
 	);
 };
-
-export default TailNavbar;

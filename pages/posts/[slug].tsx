@@ -7,12 +7,12 @@ import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeHighlight from 'rehype-highlight'
 import { getPostFromSlug, getSlugs, PostMeta } from '../../lib/api'
-import YouTube from '../../components/youtube';
+import { YouTube, Thumbnail } from '../../components'
+
 import 'highlight.js/styles/atom-one-dark.css'
 import Container from '../../components/container'
 import Comments from '../../components/comments'
 import SectionSeparator from '../../components/section-separator';
-import Thumbnail from '../../components/thumbnail';
 
 interface MDXPost {
 	source: MDXRemoteSerializeResult<Record<string, unknown>>
@@ -30,7 +30,16 @@ export default function PostPage({ post }: { post: MDXPost }) {
 					<h1 className="text-center font-bold">{post.meta.title}</h1>
 					<p className="text-center">{post.meta.date}</p>
 					<SectionSeparator />
-					<MDXRemote {...post.source} components={{ YouTube, Image, Thumbnail }} />
+					<MDXRemote
+						{...post.source}
+						components={{
+							
+							YouTube,
+							Image,
+							Thumbnail,
+							
+						}}
+					/>
 				</div>
 				<div className="post-footer max-w-2xl mx-auto w-full">
 					<hr className="hr" />

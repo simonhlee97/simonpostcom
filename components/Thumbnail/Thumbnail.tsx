@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export default function Thumbnail({ src }: { src: string }) {
+export function Thumbnail({ src }: { src: string }) {
 	return (
 		<div className="my-8 aspect-w-16 aspect-h-9">
 			<Image

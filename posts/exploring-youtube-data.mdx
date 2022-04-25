@@ -1,0 +1,35 @@
+---
+title: Exploring the YouTube Data API (v3)
+tags:
+  - youtube api
+date: 2022-04-20
+excerpt: My first post exploring the YouTube Data API.
+---
+
+<Thumbnail src='https://images.unsplash.com/photo-1540655037529-dec987208707?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1221&q=80' />
+
+If you have a Google account, you can access a massive amount of YouTube data using the YouTube Data API (v3), and use that data to add functionality to your website.
+
+You can query and search to find information about a specific channel, playlist, or video (such as number of views, likes).
+
+You'll be able to answer questions like:
+
+<div class='quote'>Which videos published in the last 24 hours got the most views?</div>
+
+Figuring out how to fine-tune your queries is fairly simple, especially if you understand how to add query strings to urls. [Excellent tutorial about query strings](https://flaviocopes.com/urlsearchparams/). The documentation is massive and has a friendly test tool to try out some queries.
+
+### An Example
+Let's say you want to display a nice-looking list of the Top 5 Most Viewed videos, published in the last 24 hours, in South Korea (or the USA).
+I made a [separate page for the example](/youtube-api/top-five-us-korea) (for now) since data-fetching in Next.js inside blog posts (MDX files) requires some extra tools and configuring. The code for the example is here.
+
+### Requirements and Setup
+
++ [Google Developer Account](https://developers.google.com/)
++ Create a project in Google Developers Console
++ Create an API key
++ Enable YouTube Data API v3 (in the APIs and Service => Library section)
+
+### Docs and Resources
+
++ [YouTube Data API](https://developers.google.com/youtube/v3)
+
