@@ -13,13 +13,11 @@ export default function TopFive({ stats, koreaStats }) {
 	const handleTab2 = () => {
 		setActiveTab('tab2')
 	}
-
+	
 	return (
 		<Container>
 			<div className={styles.Tabs}>
-				<h2 className="page-header">
-					Top 5 Most Views During Last 24 Hours (Korea and USA)
-				</h2>
+				<h2 className="page-header">Top 5 Most Views During Last 24 Hours (Korea and USA)</h2>
 				<p className="text-sm text-center">updated every 24 hours</p>
 				<ul className={styles.nav}>
 					<li className={activeTab === 'tab1' ? 'active' : ''} onClick={handleTab1}>
@@ -43,6 +41,7 @@ export default function TopFive({ stats, koreaStats }) {
 
 // getServerSideProps gets called on every request
 export async function getServerSideProps() {
+
 	var KEY = process.env.NEXT_PUBLIC_YOUTUBE_KEY
 	const usaUrl = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=US&maxResults=5&key=${KEY}`
 	const koreaUrl = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&regionCode=KR&maxResults=5&key=${KEY}`
@@ -63,4 +62,11 @@ export async function getServerSideProps() {
 			koreaStats: koreaStats.items,
 		},
 	}
+
+  // Fetch data from external API
+  // const res = await fetch(`https://.../data`)
+  // const data = await res.json()
+
+  // Pass data to the page via props
+  // return { props: { data } }
 }
