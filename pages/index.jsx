@@ -22,11 +22,9 @@
 // 	return { props: { posts } }
 // }
 
-import React from 'react'
 import Container from '../components/container'
-import { Client } from '@notionhq/client'
 
-const Home = ({ ideas }) => {
+const Home = () => {
 	return (
 		<Container>
 			<div className="flex flex-col justify-center items-center mycontainer pb-12">
@@ -34,33 +32,9 @@ const Home = ({ ideas }) => {
 					Simon - Sandbox
 				</h1>
 				<h3 className="my-4">Small projects with Next.js and Notion (as a CMS)</h3>
-
-				<div className="projects">
-					{ideas.map((idea) => (
-						<div key={idea.id}>
-							<h2>{idea.properties.column.title[0].plain_text} &rarr;</h2>
-							{/* <p>{idea.properties.description.rich_text[0]}</p> */}
-						</div>
-					))}
-				</div>
 			</div>
 		</Container>
 	)
 }
 
 export default Home
-
-export async function getStaticProps() {
-	const notion = new Client({ auth: process.env.NOTION_API_KEY })
-
-	const response = await notion.databases.query({
-		database_id: process.env.NOTION_DATABASE_ID,
-	})
-
-	return {
-		props: {
-			ideas: response.results,
-		},
-		revalidate: 7200,
-	}
-}
