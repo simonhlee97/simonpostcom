@@ -3,8 +3,6 @@ import Container from '../components/container'
 const FreeCodeCamp = ({ events }) => {
 	console.log(events)
 
-	const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' }
-
 	return (
 		<Container>
 			<div className="py-16 px-16">
