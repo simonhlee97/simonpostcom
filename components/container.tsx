@@ -3,19 +3,20 @@ import { useRouter } from 'next/router'
 import { ReactNode, ReactElement } from 'react'
 import { MyNavbar } from './index'
 
-interface ContainerChildren { 
-	children: [];
+interface ContainerChildren {
+	children: []
 }
-interface ContainerProps { 
+interface ContainerProps {}
 
-}
-
-export default function Container({ children }: {children: ReactNode}, props: ContainerProps): ReactElement | null {
-	const { ...customMeta} = props
+export default function Container(
+	{ children }: { children: ReactNode },
+	props: ContainerProps
+): ReactElement | null {
+	const { ...customMeta } = props
 	const router = useRouter()
 	const meta = {
-		title: 'Simon Lee | Web Developer, blogger',
-		description: `JavaScript, React, JamStack, Vuejs coder`,
+		title: 'Simon Lee | Web Developer',
+		description: `JavaScript, React, JamStack, VueJS, NodeJS, Rails`,
 		image: 'https://avatars.githubusercontent.com/u/22103041?s=400&u=668d531fbba9162341e3b1510491bcf9baf9eff4&v=4',
 		date: 'date',
 		type: 'website',

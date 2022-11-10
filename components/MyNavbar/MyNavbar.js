@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import Link from 'next/link';
 
@@ -16,7 +16,7 @@ export const MyNavbar = () => {
 	return (
     <nav className='navbar'>
 			<Link href="/">
-				<a className='nav-logo'>SimonPost</a>
+				<a className='nav-logo'>Simon-Sandbox</a>
 			</Link>
 			<div onClick={handleClick} className='nav-icon'>
 				{open ? <FiX /> : <FiMenu />}
@@ -30,6 +30,11 @@ export const MyNavbar = () => {
 				<li className="nav-item">
 					<Link href="/about" onClick={closeMenu}>
 						<a className="nav-link">About</a>
+					</Link>
+				</li>
+				<li className="nav-item">
+					<Link href="/freecodecamp" onClick={closeMenu}>
+						<a className="nav-link">FCC-SEOUL</a>
 					</Link>
 				</li>
 			</ul>

@@ -19,16 +19,16 @@ export default function About() {
 					</p>
 
 					<p className="mb-8">
-						I'm a Frontend Developer who enjoys building UIs and fullstack applications with
-						Jamstack and serverless tools. I am also a books/podcast nerd, 4.0
+						This 'Sandbox' is my home for experimenting with code! 💾
+					</p>
+
+					<p className="mb-8">
+						I'm a Frontend Developer who enjoys building UIs and fullstack applications
+						with Jamstack and serverless tools. I am also a books/podcast nerd, 4.0
 						tennis player, 15-handicap golfer, pizza/taco connoisseur, and (not ashamed
 						to admit) a die-hard Indiana Pacers fan 🏀.
 					</p>
-					<p className="mb-8">
-						My blog is mostly about tech and web development topics like JavaScript,
-						React, VueJS, HTML, CSS, databases, etc. and (occasionally) everyday life as
-						a Hoosier-expat in Korea.
-					</p>
+
 					<p className="mb-8 text-xl">Connect:</p>
 					<p className="mb-8 flex">
 						<a href="https://github.com/simonhlee97">
