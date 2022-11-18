@@ -33,8 +33,8 @@ export const MyNavbar = () => {
 					</Link>
 				</li>
 				<li className="nav-item">
-					<Link href="/freecodecamp" onClick={closeMenu}>
-						<a className="nav-link">FCC-SEOUL</a>
+					<Link href="/korea" onClick={closeMenu}>
+						<a className="nav-link">Korea-Travel-Tips</a>
 					</Link>
 				</li>
 			</ul>
