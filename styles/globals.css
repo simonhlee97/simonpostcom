@@ -232,7 +232,10 @@ select {
 	padding: 0.7em;
 	font-size: 9pt;
 }
-.korea-links:hover {
+.korea-active, .korea-links:hover {
 	background-color: navy;
 	color: white;
+	padding: 0.7em;
+	font-size: 9pt;
+	margin-right: 1em;
 }

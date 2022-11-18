@@ -1,16 +1,28 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export default function KoreaNav() {
+	const router = useRouter()
+
 	return (
 		<div className="pt-4 flex justify-center">
 			<Link href="/korea">
-				<a className="korea-links">Korea Tips page</a>
+				<a className={router.pathname == '/korea' ? 'korea-active' : 'korea-links'}>
+					Korea Tips 🏡
+				</a>
 			</Link>
 			<Link href="/korea/currency">
-				<a className="korea-links">Currency Converter</a>
+				<a
+					className={
+						router.pathname == '/korea/currency' ? 'korea-active' : 'korea-links'
+					}>
+					Currency Converter
+				</a>
 			</Link>
 			<Link href="/korea/pyeong">
-				<a className="korea-links">Real Estate Measurement Converter</a>
+				<a className={router.pathname == '/korea/pyeong' ? 'korea-active' : 'korea-links'}>
+					Real Estate Measurement Converter
+				</a>
 			</Link>
 		</div>
 	)

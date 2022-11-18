@@ -57,7 +57,7 @@ function Currency() {
 	return (
 		<Container>
 			<Layout>
-				<div className="pt-12 px-12">
+				<div className="text-center">
 					<h1 className="py-12">Currency Converter</h1>
 					<CurrencyInput
 						onAmountChange={handleAmount1Change}

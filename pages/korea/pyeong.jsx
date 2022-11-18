@@ -18,7 +18,7 @@ function Pyeong() {
 	return (
 		<Container>
 			<Layout>
-				<div className="pt-12 px-12">
+				<div className="text-center">
 					<h1 className="py-12">Pyeong Converter</h1>
 					<h3>
 						What's a Pyeong? 🇰🇷 Korea uses pyeong (평) for measuring apartments,
