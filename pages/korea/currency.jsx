@@ -3,7 +3,8 @@ import CurrencyInput from '../../components/CurrencyInput'
 import Container from '../../components/container'
 import Layout from './layout'
 
-const BASE_URL = `https://api.apilayer.com/fixer/latest?base=USD&apikey=WZqJNdgeKoNSf5NwBqJrf0SOhV1WAoWt`
+const API = process.env.NEXT_PUBLIC_EXCHANGE_API
+const BASE_URL = `https://api.apilayer.com/fixer/latest?base=USD&apikey=${API}`
 
 function Currency() {
 	const [amount1, setAmount1] = useState(1)
