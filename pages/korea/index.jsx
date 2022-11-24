@@ -11,7 +11,7 @@ export default function Korea() {
 						Some tools and tips that you may find helpful if you are traveling to Korea
 						🇰🇷
 					</h3>
-					<h4>I'll add more things to this project. Feel free to send suggestions.</h4>
+					<h4>I'll be adding more to this project. Feel free to send suggestions.</h4>
 				</div>
 			</Layout>
 		</Container>

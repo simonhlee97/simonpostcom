@@ -7,11 +7,10 @@ export function Thumbnail({ src }: { src: string }) {
 				src={src}
 				width={800}
 				height={450}
-				layout='responsive'
+				layout="responsive"
 				quality={80}
 				className="max-w-full h-auto rounded"
 			/>
 		</div>
 	)
 }
-

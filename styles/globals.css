@@ -48,12 +48,12 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: var(--grey);
+  background: white;
   color: var(--daily);
 }
 a {
   text-decoration: none;
-  color: var(--link);
+  color: var(--daily);
 }
 
 p, li {
@@ -120,6 +120,7 @@ ul {
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 1.6px;
+	color: white;
 }
 
 .nav-links {
