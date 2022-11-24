@@ -37,11 +37,6 @@ export const MyNavbar = () => {
 						<a className="nav-link">Korea-Travel-Tips</a>
 					</Link>
 				</li>
-				<li className="nav-item">
-					<Link href="/contact" onClick={closeMenu}>
-						<a className="nav-link">Contact</a>
-					</Link>
-				</li>
 			</ul>
 		</nav>
 	);
