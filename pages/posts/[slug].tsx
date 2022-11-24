@@ -7,12 +7,11 @@ import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeHighlight from 'rehype-highlight'
 import { getPostFromSlug, getSlugs, PostMeta } from '../../lib/api'
-import { YouTube, Thumbnail } from '../../components'
 
 import 'highlight.js/styles/atom-one-dark.css'
 import Container from '../../components/container'
 import Comments from '../../components/comments'
-import SectionSeparator from '../../components/section-separator';
+import SectionSeparator from '../../components/section-separator'
 
 interface MDXPost {
 	source: MDXRemoteSerializeResult<Record<string, unknown>>
@@ -33,11 +32,7 @@ export default function PostPage({ post }: { post: MDXPost }) {
 					<MDXRemote
 						{...post.source}
 						components={{
-							
-							YouTube,
 							Image,
-							Thumbnail,
-							
 						}}
 					/>
 				</div>
