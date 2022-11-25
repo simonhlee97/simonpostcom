@@ -1,26 +1,8 @@
-// const withMDX = require('@next/mdx')({
-//   extension: /\.mdx?$/,
-//   options: {
-//     remarkPlugins: [],
-//     rehypePlugins: [],
-//     // If you use `MDXProvider`, uncomment the following line.
-//     providerImportSource: "@mdx-js/react",
-//   },
-// })
-// module.exports = withMDX({
-//   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-//   images: {
-//     domains: ['source.unsplash.com', 'picsum.photos', 'images.unsplash.com', 'i.ytimg.com']
-//   },
-// })
-
-// next.config.js
 module.exports = {
   async headers() {
     return [
       {
-        // matching all API routes
-        source: "/api/submit-form",
+        source: "/api/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" },
