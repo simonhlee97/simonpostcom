@@ -1,4 +1,7 @@
 module.exports = {
+  images: {
+    domains: ['https://picsum.photos'],
+  },
   async headers() {
     return [
       {

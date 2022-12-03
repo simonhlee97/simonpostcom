@@ -24,6 +24,11 @@ export default function KoreaNav() {
 					Real Estate Measurement Converter
 				</a>
 			</Link>
+			<Link href="/korea/food">
+				<a className={router.pathname == '/korea/food' ? 'korea-active' : 'korea-links'}>
+					Best Food
+				</a>
+			</Link>
 		</div>
 	)
 }

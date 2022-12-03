@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import { ReactNode, ReactElement } from 'react'
-import { MyNavbar } from './index'
+import Newnav from './Newnav'
 
 interface ContainerChildren {
 	children: []
@@ -48,7 +48,7 @@ export default function Container(
 				<meta name="twitter:image" content={meta.image} />
 				{meta.date && <meta property="article:published_time" content={meta.date} />}
 			</Head>
-			<MyNavbar />
+			<Newnav />
 			<main className="min-h-full container-content flex flex-col justify-center px-8 pt-8">
 				{children}
 			</main>

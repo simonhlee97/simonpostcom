@@ -218,13 +218,27 @@ select {
 	text-align: center;
 }
 
+/* Create three equal columns that floats next to each other */
+.column {
+	float: left;
+	width: 33.3333333%;
+	padding: 55px 2px 10px 2px;
+	height: 200px;
+	border: 1px solid rgb(82, 116, 228);
+}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 .pyg {
-	font-size: 30pt;
+	font-size: 20pt;
 	color: var(--github);
 	font-weight: 900;
-	border: 1px solid rgb(82, 116, 228);
-	border-radius: 5px;
-	padding: 4px;
+	
 }
 .korea-links {
 	color: var(--darkgrey);
