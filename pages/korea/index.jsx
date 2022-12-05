@@ -1,5 +1,5 @@
 import Container from '../../components/container'
-// import KoreaLayout from '../../components/koreaLayout'
+import Covid from '../../components/covid'
 import Layout from './layout'
 
 export default function Korea() {
@@ -13,6 +13,9 @@ export default function Korea() {
 					</h3>
 					<h4>I'll be adding more to this project. Feel free to send suggestions.</h4>
 				</div>
+				<section>
+					<Covid />
+				</section>
 			</Layout>
 		</Container>
 	)
