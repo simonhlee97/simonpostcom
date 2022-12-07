@@ -27,9 +27,6 @@ function Covid() {
 		getApiData()
 	}, [])
 
-	console.log(cases)
-	// .toLocaleDateString('en-US')
-
 	const options = {
 		responsive: true,
 		plugins: {
@@ -57,7 +54,7 @@ function Covid() {
 	return (
 		<div className="text-center pt-12">
 			<div className="covid py-8 my-8">
-				<section className="container mx-auto">
+				<section className="mx-auto relative" style={{ width: '800px', height: '800px' }}>
 					<Line options={options} data={datanew} />
 				</section>
 			</div>
